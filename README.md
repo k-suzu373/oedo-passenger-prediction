@@ -24,7 +24,7 @@
 - **出力ファイル例**:
   - `oedo_2022.csv・oedo_2023.csv` … 各年度の乗降者数  
   - `landprice_2017_2021.csv` … 地価データ(ファイル名は2017からになっているが実際は2011から)  
-  - `oedo_master_2011_2021_clean.csv` … 解析用の統合データセット  
+  - `oedo_master_2011_2021_clean.csv` … 解析用のデータセット  
 
 ### 🔹 `metro_pasenger_pred.py`
 - **役割**: 大江戸線の駅別乗降者数を機械学習で予測  
@@ -41,12 +41,15 @@
 
 
 ## 使用技術
-- Python (pandas, numpy, scikit-learn, lightgbm, seaborn, matplotlib)
+- Python (pandas, scikit-learn, lightgbm)
 - XML処理: ElementTree
-- Excel出力: openpyxl
 - 評価指標: Mean Absolute Error (MAE)
 
 ## 今後の展望
 - 郊外路線データの追加による精度検証
 - 天候・イベント・人口動態など外部データを特徴量に追加
 - LightGBM以外の手法（XGBoost, CatBoost, LSTM等）との比較
+
+## その他のファイル
+- `ポートフォリオ_202508.xlsx`：成果物の概要や工夫点などをまとめたポートフォリオ
+- `企業向けIT成果物発表20250919.pptx`：ポートフォリオを基に作成した発表スライド
